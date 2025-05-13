@@ -1,0 +1,25 @@
+{
+   "action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "content.js" ],
+      "matches": [ "https://sunflower-land.com/*" ],
+      "run_at": "document_idle"
+   } ],
+   "description": "Tự động thu hoạch và canh tác trong Sunflower Land.",
+   "host_permissions": [ "https://sunflower-land.com/*" ],
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1kd0EJOsfXiGafQRTkesW/7MwqceHenAv8xCogP3WZiaGFpxPn3wIw49kOyQopjnvc8+/8ldkyGlc1I0oJ3ZXlcfz9BTF0JZb9m869M2DNgNXdu1SLSKDVIGlsVV7pXxcFbhqYry+Ewo+YJ6TGcNW7dJS68idB0HrEyyrouKConOxwnvpFwuldj35VLfJrKbSsaIxTOjL5rC36Ytz3EshDIQePCq58xb9qsC4+6DnuVEkIYyMEyzszUxOcB3GBILJg8UvYpk/wS1/bTNSvbOpE/NsCW3dhsl09V7zYNxHF+YjG5hVD7OTzTRSbzgK6gN37sisLFAWeOPOd+blCmavwIDAQAB",
+   "manifest_version": 3,
+   "name": "Sunflower Land Auto Farm",
+   "permissions": [ "scripting", "activeTab", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0"
+}
